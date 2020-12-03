@@ -6,7 +6,12 @@ ElementNameConverter.start().catch(reason => {
 }).then( () => {
     let result = '';
     for (const string of process.argv.slice(2)) {
-        result += ElementNameConverter.convertName(string) + '   ';
+        try {
+            result += ElementNameConverter.convertName(string) + '   ';
+        }
+        catch (error) {
+            result += `*${string}*   `
+        }
     }
     console.log(result);
 })
