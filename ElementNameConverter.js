@@ -62,8 +62,6 @@ class ElementNameConverter {
                 pos ++;
             }
             else {
-                console.error('name: ' + name)
-                console.error('elements: ' + elements.map((element) => { return element.name }).join(' '))
                 throw new Error("No combination of elements found");
             }
         }
