@@ -6,4 +6,4 @@ words that cant be replaced will be surrounded with asterisks (e.g. \*example\*)
 `node . <text to convert>`
 
 ## Examples
-`node . hi`: Hydrogen Iodine
+`node . hi` -> Hydrogen Iodine
